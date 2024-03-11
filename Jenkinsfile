@@ -23,8 +23,8 @@ DEPLOYMENTDESCRIPTION = null
 
           // Setup ADM
           bat "tar -xf devops/adm.zip"
-          bat "tar -xf automated-versioning-manager-(avm)-2.5.30.zip"
-		  bat "tar -xf automated-import-manager-(aim)-client-2.5.27.zip"
+          bat "tar -xf adm/automated-versioning-manager-(avm)-2.5.30.zip"
+		  bat "tar -xf adm/automated-import-manager-(aim)-client-2.5.27.zip"
           jenkinsUtils.setProperty("metrics.properties", "pipelineUsage", "true")
 		  //jenkinsUtils.setProperty("adm/appian-import-client/metrics.properties", "pipelineUsage", "true")
           
