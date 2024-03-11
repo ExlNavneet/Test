@@ -22,7 +22,7 @@ DEPLOYMENTDESCRIPTION = null
           def jenkinsUtils = load "groovy/JenkinsUtils.groovy"
 
           // Setup ADM
-          bat "tar -xf adm.zip"
+          bat "tar -xf devops/adm.zip"
           bat "tar -xf automated-versioning-manager-(avm)-2.5.30.zip"
 		  bat "tar -xf automated-import-manager-(aim)-client-2.5.27.zip"
           jenkinsUtils.setProperty("metrics.properties", "pipelineUsage", "true")
