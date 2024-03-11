@@ -22,9 +22,9 @@ DEPLOYMENTDESCRIPTION = null
           //def jenkinsUtils = load "groovy/JenkinsUtils.groovy"
 
           // Setup ADM
-          bat "tar -xf devops/adm.zip -d adm"
-          bat "tar -xf adm/automated-versioning-manager-(avm)-2.5.30.zip -d adm/appian-version-client"
-		  bat "tar -xf adm/automated-import-manager-(aim)-client-2.5.27.zip -d adm/appian-import-client"
+          bat "tar -xf devops/adm.zip"
+          bat "tar -xf adm/automated-versioning-manager-(avm)-2.5.30.zip"
+		  bat "tar -xf adm/automated-import-manager-(aim)-client-2.5.27.zip"
           //jenkinsUtils.setProperty("adm/appian-version-client/metrics.properties", "pipelineUsage", "true")
 		  //jenkinsUtils.setProperty("adm/appian-import-client/metrics.properties", "pipelineUsage", "true")
           
