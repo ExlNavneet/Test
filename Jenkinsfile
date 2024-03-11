@@ -22,7 +22,6 @@ DEPLOYMENTDESCRIPTION = null
           def jenkinsUtils = load "groovy/JenkinsUtils.groovy"
 
           // Setup ADM
-          sh "rm -rf admTest f4a"
           sh "unzip devops/Test.zip -d admTest"
           sh "unzip admTest/automated-versioning-manager-(avm)-2.5.30.zip -d admTest/appian-version-client"
 		  sh "unzip admTest/automated-import-manager-(aim)-client-2.5.27.zip -d admTest/appian-import-client"
