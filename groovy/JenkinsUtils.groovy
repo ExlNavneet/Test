@@ -129,7 +129,7 @@ void setProperty(filePath, property, propertyValue) {
 }
 
 def shNoTrace(cmd) {
-  sh '#!/bin/sh -e\n' + cmd
+  bat '#!/bin/sh -e\n' + cmd
 }
 
 return this
